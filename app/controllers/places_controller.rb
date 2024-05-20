@@ -2,7 +2,9 @@ class PlacesController < ApplicationController
   def new
     @place = Place.new 
   end
-  
+
+  # https://entr451.com/creating-new-records/ 
+  # Saving entries from "creating new records" article (company) 
   def create
     @place = Place.new(params["place"])
     @place.save
